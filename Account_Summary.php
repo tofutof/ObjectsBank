@@ -1,15 +1,12 @@
 <?php
-// Step 6: Include class definitions using the new 'classes' folder
-require_once 'classes/Account.php'; 
 require_once 'classes/Customer.php';
 
-// Step 7: Create the array with Ivy Stone's data
 $accounts = [
     new Account(20489446, 'Checking', -20.00),
     new Account(20148896, 'Savings', 380.00)
 ];
 
-// Step 8: Create the Customer object
+
 $customer = new Customer('Ivy', 'Stone', $accounts);
 ?>
 
